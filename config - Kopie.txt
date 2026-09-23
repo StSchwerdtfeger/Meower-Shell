@@ -1,0 +1,274 @@
+# Mousiki Configuration File
+# Location: $HOME/.config/mousiki/config.txt
+
+##-------------------------------------------
+##              PANEL 1: COLORS
+##-------------------------------------------
+
+# Frame & Controls
+ColorBorderTop=170
+ColorBorderBottom=170
+ColorDiskTop=170
+ColorDiskBottom=30
+ColorMetadataKey=170
+ColorMetadataVal=182
+ColorVizLeft=170
+ColorVizRight=30
+ColorProgressBarPlayed=170
+ColorProgressBarPending=182
+
+# List
+ColorListInactiveFg=
+ColorListInactiveBg=
+ColorListPlayingFg=
+ColorListPlayingBg=
+ColorListCursorFg=10
+ColorListCursorBg=238
+
+# Queue
+ColorQueueInactiveFg=
+ColorQueueInactiveBg=
+ColorQueuePlayingFg=
+ColorQueuePlayingBg=
+ColorQueueCursorFg=
+ColorQueueCursorBg=
+
+# Lyrics
+ColorLyricsInactiveFg=
+ColorLyricsInactiveBg=
+ColorLyricsActiveLineFg=182
+ColorLyricsActiveLineBg=
+ColorLyricsActiveWordFg=
+ColorLyricsActiveWordBg=
+
+##-------------------------------------------
+##              PANEL 2: ON/OFF
+##-------------------------------------------
+
+ElimentDisk=true
+ElimentDummyButtons=true
+ElimentQueue=true
+ElimentWaveForm=true
+ElimentLyrics=false
+LyricsPlaceholderBall=true
+Visualizer=true
+
+##-------------------------------------------
+##             PANEL 3: ANIMATION
+##-------------------------------------------
+
+VisualizerFluidity=10
+## 1 to 10
+WaveformStyle=raw
+## raw , smooth
+DiskRotationSpeed=0.1
+## 0.01x to 1.00x
+PlaybackMode=shuffle
+## list , loop , shuffle , stop , repeat queue
+VisualizerDegradationSpeed=8
+## 1 to 10
+VisualizerViscosity=3
+## 1 to 10
+LyricsAlignment=center
+## center , left , right
+LyricsAnimation=full
+## full , word by word , line by line , letter by letter
+## active line only , active word only
+
+##-------------------------------------------
+##             CONSOLE / LOGGING
+##-------------------------------------------
+
+ConsoleVerbosity=basic
+## basic , verbose
+## basic   = every command mousiki ran (yt-dlp/ffprobe/ffmpeg/lyrics-fetch) + its raw output
+## verbose = basic, plus internal/OS-level events (terminal resize, audio device init, spawn errors, ...)
+## Log file: $HOME/.cache/mousiki/logs/console.log -- wiped fresh at the start of every session.
+
+##-------------------------------------------
+##             AUTOSAVE / SESSION SNAPSHOT
+##-------------------------------------------
+
+AutoSave=true
+## resume exact song/position/queue/repeat/shuffle next launch
+AutoSaveIndicator=true
+AutoSaveDelayInSec=30
+AutoSaveChr=•
+## exactly one character is used, even if you paste more
+AutoSaveIndicatorType=blink
+## blink , color
+AutoSaveC1=
+AutoSaveC2=
+
+##-------------------------------------------
+##             PANEL 4: REFERENCE
+##-------------------------------------------
+
+font_en={
+          A={A,a},
+          B={B,b},
+          C={C,c},
+          D={D,d},
+          E={E,e},
+          F={F,f},
+          G={G,g},
+          H={H,h},
+          I={I,i},
+          J={J,j},
+          K={K,k},
+          L={L,l},
+          M={M,m},
+          N={N,n},
+          O={O,o},
+          P={P,p},
+          Q={Q,q},
+          R={R,r},
+          S={S,s},
+          T={T,t},
+          U={U,u},
+          V={V,v},
+          W={W,w},
+          X={X,x},
+          Y={Y,y},
+          Z={Z,z},
+        };
+
+UpperLeftCorner="╭";
+UpperRightCorner="╮";
+BottomLeftCorner="╰";
+LowerRightCorner="╯";
+Vertical="│";
+Horizontal="─";
+Seprator=":  :"
+ListSeparator="|"
+
+# General
+HKeySetting="s"
+
+# Local Music Paths
+LocalMusicPath=C:\Users\YOURNAME\.cache\mousiki
+LocalMusicPath=C:\Users\YOURNAME\Music
+LocalMusicPath=C:\Users\YOURNAME\Music\MeowerShell-yt-dlp
+
+# Navigation
+HKeyNavigateUp="ARROW_KEY_UP"
+HKeyNavigateDown="ARROW_KEY_DOWN"
+HKeyPlay="ENTER"
+HKeyPlayNextSong="n"
+HKeyPlayPreviousSong="b"
+HKeyTogglePlayPause="p"
+HKeyCyclePlayMode="m"
+HKeySearch="/"
+HKeySearchOnline="/s:"
+HKeySeekForward="ARROW_KEY_RIGHT"
+HKeySeekBackward="ARROW_KEY_LEFT"
+HKeyIncreaseVolume="1"
+HKeyDecreaseVolume="2"
+HKeyAddHoveringSongToQueue="a"
+HKeyRemoveHoveringSongFromQueue="d"
+HKeySwitchBetweenCards="TAB"
+HKeyFilterForFolder="f"
+HKeyClearFilter="c"
+HKeyQuit="q"
+HKeyResetPreference="e"
+HKeyDownloadStream="y"
+HKeyCheatsheet="?"
+HKeyRefreshUi="k"
+HKeyConsole="t"
+HKeyToggleMute="x"
+HKeyRetryLyrics="l"
+HKeyShuffleNext="#"
+HKeyToggleLyrics="+"
+HKeyToggleWaveform="w"
+HKeyQueueMoveUp="u"
+HKeyCycleSortMode="T"
+
+##-------------------------------------------
+##             PANEL 5: ABOUT APP
+##-------------------------------------------
+
+ClassTextAboutApp= {
+
+Mousiki
+
+
+
+
+
+
+
+A terminal music player built for people who prefer control.
+
+
+
+Zero external UI bloat: 100% native POSIX terminal runtime.
+
+
+
+
+
+
+
+Mousiki is designed around a fast, focused TUI
+
+
+
+with no unnecessary interface layers.
+
+
+
+A terminal music player built for people who prefer control.
+
+
+
+Zero external UI bloat: 100% native POSIX terminal runtime.
+
+
+
+
+
+
+
+Everything is keyboard-driven.
+
+
+
+Everything is configurable.
+
+
+
+Everything stays in your terminal.
+
+
+
+
+
+
+
+Devloper : ender                         Github   : itzender5820
+
+
+
+Email    : itz.ender5820@gmail.com
+
+
+
+Version  : orignal and final v1.0        Licence  : Apache licence 2.0
+
+
+
+
+
+
+
+Windows port : Steffen Schwerdtfeger     Github   : StSchwerdtfeger
+
+
+
+Adjusted to run on Windows, added some tweaks; done with the help of AI tools.
+
+
+
+
+
+};

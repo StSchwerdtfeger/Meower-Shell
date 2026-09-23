@@ -1,4 +1,4 @@
-<h1 align="center">Purrfessional MeowerShell 🐈‍⬛</h1>
+<h1 align="center">Purrfessional Meower Shell 🐈‍⬛</h1>
 
 <br>
 
@@ -10,7 +10,7 @@ Config files for my Shell/Terminal setup (in my case PowerShell 7.6.6), making u
 
 
 <p align="center">
-<strong> 👾 🐈 💾 However, have a meowsome time setting up your own cyberpunk / retrowave themed MeowerShell terminal!!! 🐈‍⬛ 🤖 👾<strong>
+<strong> 👾 🐈 💾 However, have a meowsome time setting up your own cyberpunk / retrowave themed MeowerShell terminal! Anything is pawssible!!! 🐈‍⬛ 🤖 👾<strong>
 </p>
 <br>
 

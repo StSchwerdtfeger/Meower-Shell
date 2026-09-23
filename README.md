@@ -12,7 +12,7 @@
   This is not a package with an installer or so, just an inspiration to use or copy code from my configuration files.
   For example, I created a lot of PowerShell functions to e.g. open retro emulators, such as pom1 for Apple 1 emulation.
   <br><br>
-  I didn't generalize the <code>profile.ps1</code>, except for replacing all <code>C:\Users\YOURNAME\</code> paths at the beginning, which makes it easier to include functions into your own profile. Keep that in mind.
+  I didn't generalize the <code>profile.ps1</code>, except for replacing all <code>C:\Users\YOURNAME\</code> paths at the beginning, which makes it easier to include functions into your own profile.
   The initialization of Oh My Posh and FastFetch is handled at the beginning of the PowerShell profile script and set to work also in admin mode.
 </p>
 

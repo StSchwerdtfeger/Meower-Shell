@@ -239,6 +239,12 @@ if ($PSStyle.FileInfo.PSObject.Properties['ExtensionColors']) {
 # 9. Custom Commands for certain programs and general informations #
 ####################################################################
 
+# Open github via firefox:
+function github {
+    Start-Process "firefox.exe" "https://github.com/StSchwerdtfeger"
+}
+
+# A page with informations on usefuld key commands:
 function key {
 
     $keyWidth = 20
@@ -1124,6 +1130,11 @@ function down_playlist {
         $Url
 }
 
+# Function that opens Metatogger 
+function tags {
+    Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Metatogger 7.7.lnk"
+}
+
 
 ###############################################################################
 # 11. Gum Interface for menu command
@@ -1459,6 +1470,7 @@ function commands {
 
     $commands = @(
         @("key",           'List of useful shortcut key commands'),
+        @("github",        'Command to open github via firefox'),
         @("neo",           'Matrix rain shell screensaver'),
         @("say",           'Load speech synthesizer via ``say "YOUR TEXT HERE"``'),
         @("c64",           'Open Vice c64 Emulator'),
@@ -1470,6 +1482,7 @@ function commands {
         @("prism",         'Open Music visualizer (spectogram etc.)'),
         @("down_song",     'Download song via yt-dlp using ``down_song "url"``'),
         @("down_playlist", 'Download playlist via yt-dlp using ``down_playlist "url"``'),
+        @("tags",          'Open Metatogger app for finding / editing artist + title of tracks'),
         @("y",             'Open Yazi terminal file manager'),
         @("menu",          'Open Gum custom menu'),
         @("chafa",         'Use chafa via ``chafa "path"``'),
@@ -2406,3 +2419,4 @@ function doctor {
 
     Write-Host ""
 }
+

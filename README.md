@@ -20,7 +20,7 @@ Config files for my Shell/Terminal setup (in my case PowerShell 7.6.6), making u
 
 <br>
 
-For the above I used [FastFetch](https://github.com/fastfetch-cli/fastfetch) (see `fastfetch/config.json` for details on this specific setup) in combination with [Oh My Posh](https://ohmyposh.dev/) using a customized [JanDeDobbeleer theme](https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json) (customized version in this repo) and [CaskaydiaCoveNerdFont](https://www.nerdfonts.com/font-downloads) (included in this repo; needed to display icons, emojis, symbols etc. in the terminal).
+For the above I used [FastFetch](https://github.com/fastfetch-cli/fastfetch) (see `fastfetch/config.json` for details on this specific setup) in combination with [Oh My Posh](https://ohmyposh.dev/) using a customized [JanDeDobbeleer theme](https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json) (customized version in this repo) and [CaskaydiaCoveNerdFont](https://www.nerdfonts.com/font-downloads) (not included in this repo, since files are too big; needed to display icons, emojis, symbols etc. in the terminal).
 
 <br>
 

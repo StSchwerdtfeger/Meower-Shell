@@ -1,0 +1,176 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "display": {
+    "separator": " ",
+    "constants": [ // not used in the code below
+    "─────────────────", // {$1}
+    "│", // {$2} Left/right border
+    " " // {$3} Border padding 
+    ],
+    "key": {
+        "width": 12 // Adjust this number to increase or decrease the tab spacing
+    }
+  },
+  "logo": {
+    "type": "file",  // YOUR NAME SET HERE ASCII file included in the repo
+    "source": "C:/Users/YOURNAME/.config/fastfetch/ascii.txt",
+    "color": {
+      "1": "#F0CCFF",
+      "2": "#8A62A6",
+      "3": "#F5C2E7",
+      "4": "#FAB387",
+      "5": "#F9E2AF",
+      "6": "#A6E3A1",
+      "7": "#94E2D5",
+      "8": "#89DCEB",
+      "9": "#74C7EC"
+    },
+    "padding": {
+      "top": 1,
+      "right": 10 // moving the module boxes to the right
+    }
+  },
+
+  "modules": [
+  
+    { // actually results in blocks not circles...
+      "type": "colors",
+      "symbol": "cirlce",
+      "paddingLeft": 11,
+      "block":{
+      "range": [1, 7] 
+      }
+    },
+    "break", // code for break...
+    {
+     "type": "custom", // MEOWStart
+     // {#1} is equivalent to `\u001b[1m`. {#} is equivalent to `\u001b[m`
+      "format": "{#90}┌───────{#} {##F5C2E7}>> Meow! Welcome Back! << {#}{#90}───────┐{#}"
+    },    
+
+   // "break",  
+    {
+      "type": "title", // User name and host
+      "key": "User:",
+      "format": "{##F5C2E7}{user-name}{#}{##CDD6F4}@{#}{##89DCEB}{host-name} {#}{#90}│{#}"
+
+      //"format": "{user-name}{#90}@{#}{host-name<25}{#}{#90}│{#}",
+ 
+ //     "format": "{user-name}{@}{host-name<35} {#90}│{#}"
+
+    },
+  //  "break",
+    {
+            "type": "custom", // MEOW End
+            "format": "{#90}└─────────────────────────────────────────┘{#}"
+    },
+    "break",
+        {
+     "type": "custom", // Soft and Hardware Start
+     // {#1} is equivalent to `\u001b[1m`. {#} is equivalent to `\u001b[m`
+      "format": "{#90}┌────────── {#}{##F5C2E7}Soft- and Hardware {#}{#90}──────────┐{#}"
+    },    
+    {
+      "type": "os",
+      "key": "OS:",
+      "keyColor": "#89DCEB",
+      "format": "{name} {version} {codename} {arch<13} {#90}│{#}" // arch<13 == 13 spaces behind it otherwise cut off... 
+
+    },
+    {
+      "type": "cpu",
+      "key": "CPU:",
+      "showPeCoreCount": true,
+      "keyColor": "#F5C2E7",
+      "format": "{name<29} {#90}│{#}"
+    },
+    {
+      "type": "bios",
+      "key": "{##F9E2AF}BIOS:{#}",
+      "keyColor": "#FAB387",
+      "format": "{version<29} {#90}│{#}"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU:",
+      "keyColor": "#FAB387",
+      "format": "{name<24}      {#90}│{#}" // somespacing was added manually here, since
+                                           // it prduces two lines, given integrated and dedicated GPU...
+    },
+    {
+      "type": "memory",
+      "key": "MEMORY:",
+      "keyColor": "#A6E3A1",
+      "format": "{used>5} / {total} ({##F5C2E7}{percentage}){#}       {#90}│{#}" // here as well
+    },
+    {
+      "type": "disk",
+      "key": "DISK:",
+      "keyColor": "#94E2D5",
+      "format": "{size-used} / {size-total} ({##F5C2E7}{size-percentage}){#} {#90}│{#}"
+    },
+    {
+            "type": "custom", // End Hardware
+            "format": "{#90}└────────────────────────────────────────┘{#}"
+    },
+    
+    "break",
+
+    {
+     "type": "custom", // Extra Information Start
+     // {#1} is equivalent to `\u001b[1m`. {#} is equivalent to `\u001b[m`
+      "format": "{#90}┌───── {#}{##F5C2E7}Cat Intelligence Agency (C.I.A.){#}{#90} ───────┐{#}"
+    },    
+
+    {
+      "type": "Users",
+      "key": "{##F9E2AF}LOGIN:{#}",
+      "keyColor": "#89DCEB",
+      "format": "{name}; log-in @ {login-time<19} {#90}│{#}"
+    },
+        {
+      "type": "Uptime",
+      "key": "{##89B4FA}UPTIME:{#}",
+      "keyColor": "#94E2D5",
+      "format": "{hours>2} h {minutes>2} min.                        {#90}│{#}" // limiting hours and minutes two min. two sapces, otherwise border gets messed up 
+    },
+        {
+      "type": "LocalIp",
+      "key": "{##F38BA8}LOC. IP:{#}",
+      "keyColor": "#94E2D5",
+      "format": "{ipv4<36}{#90}│{#}"
+    },
+    {
+      "type": "DateTime",
+      "key": "{##89DCEB}DATE:{#}",
+      "keyColor": "#94E2D5",
+      "format": "Date: {day-in-month>2}.{month>2}. {year<23}{#90}│{#}"
+      
+    },
+    {
+      "type": "Mouse",
+      "key": "{##F5C2E7}MOUSE(!):{#}",
+      "keyColor": "#94E2D5",
+      "format": "{name<36}{#90}│{#}"    // limit day-in-month for the case of 
+                                        // single digit months, in order to keep the frame
+      
+    },
+
+        {
+            "type": "custom", // End CIA
+            "format": "{#90}└──────────────────────────────────────────────┘{#}"
+    },
+
+    "break",    
+    {
+      "type": "colors",
+      "symbol": "cirlce",
+      "paddingLeft": 11,
+      "block":{
+      "range": [1, 7] // 1:7 blocks with color range from 1 to 7
+      }
+    },
+    "break" // code for break...
+  ]
+}

@@ -43,7 +43,7 @@ function Set-TerminalTitle {
     [Console]::Write("`e]0;$Title`a")
 }
 
-Set-TerminalTitle "MeowerShell 🐈‍⬛ YOURNAME HERE"
+Set-TerminalTitle "MeowerShell 🐈‍⬛"
 
 
 ########################################################################

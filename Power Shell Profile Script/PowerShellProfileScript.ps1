@@ -43,7 +43,7 @@ function Set-TerminalTitle {
     [Console]::Write("`e]0;$Title`a")
 }
 
-Set-TerminalTitle "MeowerShell 🐈‍⬛ stsch"
+Set-TerminalTitle "MeowerShell 🐈‍⬛ YOURNAME HERE"
 
 
 ########################################################################
@@ -563,6 +563,10 @@ function cat {
     bat $args
 }
 
+# Start Midnight Commander
+function mc {
+    & 'C:\Program Files\Midnight Commander\mc.exe' 
+}
 
 ########## Start Yazi
 
@@ -1484,6 +1488,7 @@ function commands {
         @("down_playlist", 'Download playlist via yt-dlp using ``down_playlist "url"``'),
         @("tags",          'Open Metatogger app for finding / editing artist + title of tracks'),
         @("y",             'Open Yazi terminal file manager'),
+        @("mc",             'Open Midnight Commander terminal file manager'),
         @("menu",          'Open Gum custom menu'),
         @("chafa",         'Use chafa via ``chafa "path"``'),
         @("purr",          'Reload fastfetch screen'),
@@ -2074,6 +2079,11 @@ function doctor {
         -Name "Yazi" `
         -Command "yazi" `
         -Description "Terminal file manager available"
+    
+    Test-MeowCommand `
+        -Name "Midnight Commander" `
+        -Command "mc" `
+        -Description "2. Terminal file manager available"
 
     Test-MeowCommand `
         -Name "Chafa" `

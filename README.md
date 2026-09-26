@@ -91,7 +91,7 @@ $MeowMusicFolder = Join-Path $MeowMusic "MeowerShell-yt-dlp"
 
 | Application | Function                                                                                                             |
 | :---------- | :------------------------------------------------------------------------------------------------------------------- |
-| **Yazi**    | Super fat file explorer including preview of images, .txt, PDF files...                                              |
+| **Yazi**    | Super fast file explorer including preview of images, .txt, PDF files...                                              |
 | **fzf**     | Fuzzy search engine, bound to Ctrl + R                                                                               |
 | **bat**     | An alternative to cat that fully shows text-based files in the terminal; function that overrides bat to cat included |
 | **btop**    | A kind of retro-looking task manager inside your terminal                                                            |
